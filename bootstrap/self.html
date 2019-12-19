@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Minecraft Sculpture</title>
+  <title>Self Portrait</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -29,6 +29,9 @@
       <a class="nav-link" href="5.html">Net Art</a>
 	</li>
 	<li class="nav-item">
+      <a class="nav-link" href="self.html">Self Portrait</a>
+	</li>
+	<li class="nav-item">
       <a class="nav-link" href="final.html">Final Project</a>
 	</li>
   </ul>
@@ -36,10 +39,49 @@
 </nav>
 
 <div class="container-fluid">
-  <h1>Minecraft Sculpture</h1>
-  <p>Using the sculpture I built in the game, I used the structure to create a 3D model of the camera printed from a 3D printer.</p>
-  <img src="sculpture2.jpg" class="rounded img-fluid" alt="camera">
-  <a href="5.html">Next</a>
+  <h1>Self Portrait</h1>
+  <p>This is a self portrait I made through p5.js</p>
+  <img src="self.png" class="rounded img-fluid" alt="portrait">
+<pre class>
+function setup() {
+createCanvas(600,600);
+background(146,216,233);
+strokeWeight(10);
+}
+
+function draw() {
+ //hair
+fill(0);
+arc(300, 400, 500, 750, PI, TWO_PI);
+  
+ //Head
+fill(254,219,171);
+ellipse(300, 250, 400, 400);
+
+//glasses
+fill(255,255,255);
+strokeJoin(ROUND);
+rect(190,200,80,80);
+fill(255,255,255);
+rect(320,200,80,80);
+line(320,250,270,250);
+
+
+//eyes
+fill(0);
+ellipse(230,250,20,20);
+fill(0);
+ellipse(360,250,20,20);
+
+//body
+square(150, 470, 300, 50, 50);
+
+//mouth 
+arc(300,350,70,50,0,3.14);
+
+
+}</pre>
+  <a href="final.html">Next</a>
 </div>
 
 </body>
